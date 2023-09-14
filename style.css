@@ -1,0 +1,267 @@
+@import url('https://fonts.cdnfonts.com/css/creepy-sunday');
+/* font-family: 'Creepy Sunday', sans-serif;  titulo */
+@import url('https://fonts.cdnfonts.com/css/creepster');
+/* font-family: 'Creepster', sans-serif;  menu*/
+@import url('https://fonts.cdnfonts.com/css/no-hubo-tiempo');
+/* font-family: 'No hubo Tiempo', sans-serif;  subtitulo */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&family=Roboto&family=Source+Sans+3:wght@600&display=swap');
+/* font-family: 'Nunito Sans', sans-serif; para el parrafo
+ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+3:wght@600&display=swap');
+/* font-family: 'Source Sans 3', sans-serif;  boton */
+@media screen and (min-width: 320px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    /* inicio de menu */
+    .enlace-logo{
+        padding: 0px 12px;
+    }
+    .logo{
+        height: 48px;
+    }
+    nav ul{
+        float: right;
+        margin-right: 2px;
+    }
+    nav ul li{
+        line-height: 50px;
+        margin: 2px;
+
+    }
+    nav ul li a{
+        list-style: none;
+        text-decoration: none;
+        color: #f0e8e2;
+        font-family: 'Creepster', sans-serif;
+        font-size: 25px;
+        text-align: center;
+    }  
+    .menu-container .navbar{
+        width: 150%;
+        background-color: #581b98;
+        height: 50px;
+    }
+    .menu-container .navbar .logo{
+        width: auto;
+        height: 3rem;
+        margin: 2px;
+    }
+    .menu-container{
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        position: relative;
+        z-index: 1;
+    }
+    .menu-btt .fi{
+        position: absolute;
+        top: 10px;
+        right: 12px;
+        cursor: pointer;
+    }
+    .menu-btt .checkbox{
+        opacity: 0;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 10px;
+        right: 12px;
+    }
+    .fi{
+        pointer-events: none;
+        font-size: 24px;
+    }
+    .fi-br-cross{
+        display: none;
+    }
+    .checkbox:checked ~ .fi-br-menu-burger{
+        display: none;
+    }
+    .checkbox:checked ~ .fi-br-cross{
+        display: flex;
+    }
+    .menu-links{
+        display: flex;
+        flex-direction: column;
+        display: inline;
+        width: 200px;
+        top: 50px;
+        right: 0px;
+        display: none;
+    }
+    .menu-links li{
+        list-style: none;
+    }
+    .menu-links li a{
+        text-decoration: none;
+        color: inherit;
+        background-color: #f3558e;
+        margin: 5px;
+        display: block;
+    }
+    .menu-links li a:hover{
+        background-color: #fac4d8;
+        display: block;
+    }
+    .checkbox:checked ~ .menu-links{
+        display: block;
+    }
+    /* inicio del main */
+    .video-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(90deg, rgba(96, 76, 195, 0.411) 0%, rgba(78, 21, 103, 0.425) 35%, rgba(216, 60, 102, 0.418) 100%);
+        min-height: 100vh;
+        margin-top: -150px;
+        margin: 0;
+    }
+    .video-bg{
+        position: absolute;
+        display: none;
+    }
+    .video-bg2{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+    }
+    h1{
+        color: #ffff;
+        font-family: 'Creepy Sunday', sans-serif;
+        font-size: 100px;
+        font-weight: 150px;
+        /* aqui tengo q poner una mediaquery para agrandar la letra */
+    }
+    /* inicio de presentacion */
+    .container-principal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-image:  url(./img/wp2.png);
+        background-position: top;
+        width: 100%;
+        height: 840px;
+        background-attachment: fixed;
+        color: white;
+    }
+    .title-principal{
+        font-family: 'No hubo Tiempo', sans-serif;
+        font-size: 70px;
+        padding-bottom: 25px;
+    }
+    .logo-principal{
+        width: 200px;
+        height: auto;
+        /* margin-top: -250px;
+        margin-bottom: 30px; */
+        /* en media query cambiar el tamaño de yamirawr */
+    }
+    .sub-title-principal{
+        font-size: 25px;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+    .txt-principal{
+        font-size: 20px;
+        margin: 10px;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+    .txt-principal-contac{
+        font-family: 'Nunito Sans', sans-serif;
+    }
+    .container-redes{
+        list-style: none;
+        text-decoration: none; 
+        
+        font-size: 50px;
+        padding-top: 25px;
+    }
+    /* inicio de about me */
+    .container-aboutme{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-image:  url(./img/wp2.png);
+        background-position: top;
+        width: 100%;
+        height: 840px;
+        background-attachment: fixed;
+        color: white;
+    }
+    .tittle-aboutme{
+        font-family: 'No hubo Tiempo', sans-serif;
+        font-size: 70px;
+    }
+    /* inicio de porfolio */
+    .container-porfolio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-image:  url(./img/wp2.png);
+        background-position: top;
+        width: 100%;
+        height: 840px;
+        background-attachment: fixed;
+        color: white;
+        font-family: 'No hubo Tiempo', sans-serif;
+        font-size: 70px;
+    }
+    /* inicio de educacion */
+    .container-education{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-image:  url(./img/wp2.png);
+        background-position: top;
+        width: 100%;
+        height: 840px;
+        background-attachment: fixed;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+    /* inicio de contact */
+    .container-contac{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-image:  url(./img/wp2.png);
+        background-position: top;
+        width: 100%;
+        height: 840px;
+        background-attachment: fixed;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+    /* inicio de footer */
+    .container-footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-image:  url(./img/wp2.png);
+        background-position: top;
+        width: 100%;
+        height: 840px;
+        background-attachment: fixed;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+}
