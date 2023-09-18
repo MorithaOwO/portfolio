@@ -15,6 +15,9 @@
         margin: 0;
         box-sizing: border-box;
     }
+    p{
+        font-family: 'Nunito Sans', sans-serif;
+    }
     /* inicio de menu */
     .enlace-logo{
         padding: 0px 12px;
@@ -112,6 +115,7 @@
     }
     /* inicio del main */
     .video-container{
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -127,7 +131,7 @@
         display: none;
     }
     .video-bg2{
-        width: 100%;
+        /* width: 100%; */
         position: absolute;
         top: 50%;
         left: 50%;
@@ -153,9 +157,10 @@
         background-image:  url(./img/wp2.png);
         background-position: top;
         width: 100%;
-        height: 840px;
+        height: 900px;
         background-attachment: fixed;
         color: white;
+        padding: 5%;
     }
     .title-principal{
         font-family: 'No hubo Tiempo', sans-serif;
@@ -165,8 +170,6 @@
     .logo-principal{
         width: 200px;
         height: auto;
-        /* margin-top: -250px;
-        margin-bottom: 30px; */
         /* en media query cambiar el tamaño de yamirawr */
     }
     .sub-title-principal{
@@ -180,13 +183,19 @@
     }
     .txt-principal-contac{
         font-family: 'Nunito Sans', sans-serif;
+        font-size: 25px;
     }
-    .container-redes{
+    .container-redes .btn-redes{
+        margin: 50px 20px;
+        width: 80px;
+        height: auto;
+        background: #f3558e;
+        border-radius: 10%;
+        filter: drop-shadow(7px 7px 15px #ffffff9d);
+    }
+    .container-redes a img{
         list-style: none;
         text-decoration: none; 
-        
-        font-size: 50px;
-        padding-top: 25px;
     }
     /* inicio de about me */
     .container-aboutme{
@@ -201,10 +210,19 @@
         height: 840px;
         background-attachment: fixed;
         color: white;
+        padding: 5%;
     }
     .tittle-aboutme{
         font-family: 'No hubo Tiempo', sans-serif;
-        font-size: 70px;
+        font-size: 90px;
+        margin: 50px;
+    }
+    .txt-aboutme{
+        background-color: #00000049;
+        border-radius: 15px;
+        font-size: 35px;
+        padding: 5%;
+        margin: 10px;
     }
     /* inicio de porfolio */
     .container-porfolio{
@@ -232,9 +250,24 @@
         background-image:  url(./img/wp2.png);
         background-position: top;
         width: 100%;
-        height: 840px;
+        height: 900px;
         background-attachment: fixed;
+        color: #ffff;
+        padding: 5%;
+    }
+    .title-education{
+        font-size: 100px;
+        margin: 50px;
+        font-family: 'No hubo Tiempo', sans-serif;
+    }
+    .container-education--div{
         font-family: 'Nunito Sans', sans-serif;
+        background-color: #00000049;
+        border-radius: 15px;
+        font-size: 35px;
+        padding: 5%;
+        margin: 10px;
+        font-size: 35px;
     }
     /* inicio de contact */
     .container-contac{
