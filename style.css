@@ -234,11 +234,16 @@
         background-image:  url(./img/wp2.png);
         background-position: top;
         width: 100%;
-        height: 840px;
+        height: 900px;
         background-attachment: fixed;
         color: white;
         font-family: 'No hubo Tiempo', sans-serif;
         font-size: 70px;
+    }
+    .porfolio-img{
+        height: auto;
+        width: 215px;
+        padding: 25px;
     }
     /* inicio de educacion */
     .container-education{
@@ -279,9 +284,47 @@
         background-image:  url(./img/wp2.png);
         background-position: top;
         width: 100%;
-        height: 840px;
+        height: 900px;
         background-attachment: fixed;
         font-family: 'Nunito Sans', sans-serif;
+        color: #ffff;
+    }
+    .title-contac{
+        font-size: 95px;
+        margin: 50px;
+        font-family: 'No hubo Tiempo', sans-serif;
+    }
+    .container-contac-icon .btn-redes{
+        margin: 50px 20px;
+        width: 80px;
+        height: auto;
+        background: #f3558e;
+        border-radius: 10%;
+        filter: drop-shadow(7px 7px 15px #ffffff9d);
+    }
+    .txt-contac{
+        font-size: 25px;
+        margin: 10px;
+        font-family: 'Nunito Sans', sans-serif;
+        padding: 10%;
+    }
+    .txt-contac a{
+        color: #ffff;
+    }
+    /* inicio de formulario */
+    .container-formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-image:  url(./img/wp2.png);
+        background-position: top;
+        width: 100%;
+        height: 900px;
+        background-attachment: fixed;
+        font-family: 'Nunito Sans', sans-serif;
+        color: #ffff;
     }
     /* inicio de footer */
     .container-footer{
