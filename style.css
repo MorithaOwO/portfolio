@@ -107,15 +107,33 @@
         margin: 5px;
         display: block;
     }
-    .menu-links li a:hover{
+    /* .menu-links li a:hover{
         background-color: #fac4d8;
         display: block;
-    }
+    } */
     .checkbox:checked ~ .menu-links{
         display: block;
     }
-    @media screen and (min-width: 1024px){
-
+    @media screen and (min-width: 768px){
+        .checkbox, .fi-br-menu-burger, .fi-br-cross{
+            display: none;
+        }
+        .menu-links{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 48px;
+            width: unset;
+        }
+        .menu-links li a{
+            margin-right: 25px;
+            background-color: #581b98;
+            cursor: pointer;
+        }
+        .menu-links li a:hover{
+            color: #ee84ab;
+        }
     }
     /* inicio del main */
     .video-container{
@@ -150,6 +168,11 @@
         font-size: 100px;
         font-weight: 150px;
         /* aqui tengo q poner una mediaquery para agrandar la letra */
+    }
+    @media screen and (min-width: 768px){
+        .tittle-h1{
+            font-size: 235px;
+        }
     }
     /* inicio de presentacion */
     .container-principal{
@@ -201,6 +224,40 @@
         list-style: none;
         text-decoration: none; 
     }
+    @media screen and (min-width: 768px){
+        .container-principal{
+            height: 1224px;
+        }
+        .logo-principal{
+            width: 350px;
+            height: auto;
+            margin-top: 150px;
+            margin-bottom: 80px;
+        }
+        .title-principal{
+            font-size: 10rem;
+        }
+        .sub-title-principal{
+            font-size: 3rem;
+        }
+        .txt-principal{
+            font-size: 2rem;
+        }
+        .txt-principal-contac{
+            font-size: 2.5rem;
+        }
+    }
+    @media screen and (min-width: 1024px){
+        .container-principal{
+            height: 1440px;
+        }
+        .logo-principal{
+            width: 400px;
+            height: auto;
+            margin-top: 250px;
+            margin-bottom: 80px;
+        }
+    }
     /* inicio de about me */
     .container-aboutme{
         display: flex;
@@ -228,6 +285,19 @@
         padding: 5%;
         margin: 10px;
     }
+    @media screen and (min-width: 768px){
+        .container-aboutme{
+            height: 1024px;
+        }
+        .tittle-aboutme{
+            font-size: 10rem;
+        }
+    }
+    @media screen and (min-width: 1024px){
+        .container-aboutme{
+            height: 1440px;
+        }
+    }
     /* inicio de porfolio */
     .container-porfolio{
         display: flex;
@@ -252,6 +322,27 @@
         height: auto;
         width: 215px;
         padding: 25px;
+    }
+    @media screen and (min-width: 768px){
+        .container-porfolio{
+            height: 1024px;
+        }
+        .title-porfolio{
+            font-size: 10rem;
+        }
+        .porfolio-img{
+            height: auto;
+            width: 350px;
+        }
+    }
+    @media screen and (min-width: 1024px){
+        .container-porfolio{
+            height: 1440px;
+        }
+        .porfolio-img{
+            height: auto;
+            width: 550px;
+        }
     }
     /* inicio de educacion */
     .container-education{
@@ -281,6 +372,19 @@
         padding: 5%;
         margin: 10px;
         font-size: 35px;
+    }
+    @media screen and (min-width: 768px){
+        .container-education{
+            height: 1024px;
+        }
+        .title-education{
+            font-size: 10rem;
+        }
+    }
+    @media screen and (min-width: 1024px){
+        .container-education{
+            height: 1440px;
+        }
     }
     /* inicio de contact */
     .container-contac{
@@ -321,6 +425,22 @@
     }
     .txt-contac a{
         color: #ffff;
+    }
+    @media screen and (min-width: 768px){
+        .container-contac{
+            height: 1024px;
+        }
+        .title-contac{
+            font-size: 10rem;
+        }
+        .txt-contac{
+            font-size: 3rem;
+        }
+    }
+    @media screen and (min-width: 1024px){
+        .container-contac{
+            height: 1440px;
+        }
     }
     /* inicio de formulario */
     .container-formulario{
@@ -387,6 +507,28 @@
         font-family: 'Nunito Sans', sans-serif;
         color: #fff;
         font-size: 25px;
+    }
+    @media screen and (min-width: 768px){
+        .form{
+            font-size: 45px;
+        }
+        .container-formulario{
+            height: 1800px;
+        }
+        .title-formulario-h3{
+            font-size: 10rem;
+        }
+        .form .form-control{
+            width: 550px;
+            height: auto;
+            font-size: 35px;
+            border-radius: 10px;
+        }
+    }
+    @media screen and (min-width: 1024px){
+        .container-formulario{
+            height: 2000px;
+        }
     }
     /* inicio de footer */
     .container-footer{
