@@ -21,6 +21,7 @@
     /* inicio de menu */
     .enlace-logo{
         padding: 0px 12px;
+        position: absolute;
     }
     .logo{
         height: 48px;
@@ -42,17 +43,17 @@
         font-size: 25px;
         text-align: center;
     }  
-    .menu-container .navbar{
+    .menu-container-nav .navbar{
         width: 150%;
         background-color: #581b98;
         height: 50px;
     }
-    .menu-container .navbar .logo{
+    .menu-container-nav .navbar .logo{
         width: auto;
         height: 3rem;
         margin: 2px;
     }
-    .menu-container{
+    .menu-container-nav{
         color: white;
         display: flex;
         justify-content: space-between;
@@ -112,6 +113,9 @@
     }
     .checkbox:checked ~ .menu-links{
         display: block;
+    }
+    @media screen and (min-width: 1024px){
+
     }
     /* inicio del main */
     .video-container{
@@ -237,8 +241,12 @@
         height: 900px;
         background-attachment: fixed;
         color: white;
+        padding: 5%;
+    }
+    .title-porfolio{
         font-family: 'No hubo Tiempo', sans-serif;
-        font-size: 70px;
+        font-size: 100px;
+        margin: 50px;
     }
     .porfolio-img{
         height: auto;
@@ -284,7 +292,7 @@
         background-image:  url(./img/wp2.png);
         background-position: top;
         width: 100%;
-        height: 900px;
+        height: 990px;
         background-attachment: fixed;
         font-family: 'Nunito Sans', sans-serif;
         color: #ffff;
@@ -294,8 +302,11 @@
         margin: 50px;
         font-family: 'No hubo Tiempo', sans-serif;
     }
+    .container-contac-icon{
+        margin: 15px;
+    }
     .container-contac-icon .btn-redes{
-        margin: 50px 20px;
+        margin: 10px 15px;
         width: 80px;
         height: auto;
         background: #f3558e;
@@ -303,10 +314,10 @@
         filter: drop-shadow(7px 7px 15px #ffffff9d);
     }
     .txt-contac{
-        font-size: 25px;
-        margin: 10px;
+        font-size: 30px;
+        margin: 5px;
         font-family: 'Nunito Sans', sans-serif;
-        padding: 10%;
+        padding: 10px;
     }
     .txt-contac a{
         color: #ffff;
@@ -321,10 +332,61 @@
         background-image:  url(./img/wp2.png);
         background-position: top;
         width: 100%;
-        height: 900px;
+        height: 1250px;
         background-attachment: fixed;
         font-family: 'Nunito Sans', sans-serif;
         color: #ffff;
+        padding: 10%;
+    }
+    .title-formulario-h3{
+        font-size: 95px;
+        margin: 50px;
+        font-family: 'No hubo Tiempo', sans-serif;
+    }
+    .txt-formulario{
+        font-family: 'Nunito Sans', sans-serif;
+        background-color: #00000049;
+        border-radius: 15px;
+        font-size: 35px;
+        padding: 5%;
+        margin: 10px;
+        font-size: 35px;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Nunito Sans', sans-serif;
+        background-color: #00000049;
+        border-radius: 15px;
+        font-size: 15px;
+        padding: 5%;
+        margin: 10px;
+        font-size: 25px;
+        min-width: 320px;
+        height: auto;
+    }
+    .form-label{
+        margin: 15px;
+    }
+    .form .form-control{
+        width: 250px;
+        height: auto;
+        font-size: 25px;
+        border-radius: 10px;
+    }
+    .btn-form{
+        width: 180px;
+        height: 60px;
+        background: #f3558e;
+        border-radius: 10px;
+        filter: drop-shadow(7px 7px 15px #ffffff9d);
+        border: none;
+        font-family: 'Nunito Sans', sans-serif;
+        color: #fff;
+        font-size: 25px;
     }
     /* inicio de footer */
     .container-footer{
@@ -333,11 +395,23 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        background-image:  url(./img/wp2.png);
-        background-position: top;
-        width: 100%;
-        height: 840px;
+        background-image: url(./img/wp2.png);
+        background-position: bottom;
         background-attachment: fixed;
         font-family: 'Nunito Sans', sans-serif;
+        color: #fff;
+        width: 100%;
+        height: 200px;
+    }
+    .btn-footer{
+        margin: 50px 20px;
+        width: 60px;
+        height: auto;
+        background: #f3558e;
+        border-radius: 10%;
+        filter: drop-shadow(7px 7px 15px #ffffff9d);
+    }
+    span{
+        margin-bottom: 35px;
     }
 }

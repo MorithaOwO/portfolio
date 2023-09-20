@@ -11,10 +11,10 @@
     <title>Porfolio</title>
 </head>
 <body> 
-        <head class="header">
-        <div class="menu-container">
+        <header class="header--1">
+        <div class="menu-container-nav">
             <nav class="navbar">
-                <a href="#" class="enlace-logo" ><img class="logo" src="./img/logo2.png" alt="logo"></a>
+                <a href="#PanConKesito" class="enlace-logo" ><img class="logo" src="./img/logo2.png" alt="logo"></a>
                 <div class="menu-btt">
                     <input type="checkbox" class="checkbox">
                     <i class="fi fi-br-menu-burger"></i>
@@ -39,7 +39,7 @@
                 <source src="./img/videobg2.mp4" type="video/mp4">
             </video>
         </div>
-    </head>
+    </header>
     <main>
         <div class="container-principal">
             <img src="./img/hallowen.png" alt="logo" class="logo-principal" id="PanConKesito">
@@ -59,7 +59,7 @@
         </p>
     </section>
     <section class="container-porfolio">
-        <h2 id="Porfolio">Porfolio</h2>
+        <h2 id="Porfolio" class="title-porfolio">Porfolio</h2>
         <a href="https://drive.google.com/file/d/1fp8VWZghGirvgDbrA4gBwWkojxYK0W__/view?usp=sharing" target="_blank"><img src="./img/eva.png" alt="Icono Eva" class="porfolio-img"></a>
         <a href="https://drive.google.com/file/d/1yhNpalobcHTidFntoyh17NgVLgAVd-kS/view?usp=sharing" target="_blank"><img src="./img/boji.png" alt="Boji" class="porfolio-img"></a>
     </section>
@@ -82,18 +82,35 @@
             <p>LinkedIn <a href="www.linkedin.com/in/yamila-gonzalez-23a5a1187">In/Yamila</a></p>
             <p>WhatsApp <u>+54 9 388 410-5949</u></p>
         </div>
-        
     </section>
-    <select class="container-formulario" id="Formulario">
-        <h2>Muchas gracias!</h2>
-        <p>Si quieres que me contacte con tigo completa este formulario!</p>
-        <form action="">
-            <label for="">Nombre:*</label>
-            <input type="text" placeholder="Escribe tu nombre">
-        </form>
-    </select>
+    <section class="container-formulario" id="Formulario">
+        <div>
+            <h3 class="title-formulario-h3">Muchas gracias!</h3>
+            <p class="txt-formulario">Si quieres que me contacte con tigo completa este formulario!</p>
+        </div>
+        <div class="form">
+            <label for="exampleFormControlInput1" class="form-label">Nombre:</label>
+            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Ej: Susana Horia">
+          </div>
+          <div class="form">
+            <label for="exampleFormControlInput1" class="form-label">Correo:</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="form">
+            <label for="exampleFormControlTextarea1" class="form-label">Mensaje:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="btn-form">
+            <input class="btn-form" type="submit" value="Enviar">
+          </div>
+    </section>
     <footer class="container-footer">
-        <samp>nose que poner aqui</samp>
+        <div class="container-redes">
+            <a href="https://www.instagram.com/morithaowo/" target="_blank"><img src="./img/icon2.png" alt="icono instagram" class="btn-footer"></a>
+            <a href="https://github.com/MorithaOwO" target="_blank"><img src="./img/icon1.png" alt="icono github" class="btn-footer"></a>
+            <a href="#" target="_blank"><img src="./img/icon4.png" alt="icono LinkedIn" class="btn-footer"></a>      
+        </div>
+        <span>© 2023 - Desarrollado por PanConKesito</span>
     </footer>
 </body>
 </html> 
